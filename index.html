@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Assets/style.css" />
+    <title>Class 3</title>
+  </head>
+  <body>
+    <div class="header">
+    <h1>Class - 3</h1>
+    </div>
+
+    <div class="container">
+
+        <main>
+         <!-- Topic section starts here ====================-->
+
+            <section id="topic-sect">
+                <div class="layouts">
+                  <h2>Css Layouts</h2>
+        
+                  <ul>
+                    <li><a href="#display"> 1 - The Display Property</a></li>
+                    <li><a href="#widht-maxw"> 2 - Width and Max-Width</a></li>
+                    <li><a href="#position"> 3 - The position propoerty</a></li>
+                    <li><a href="#z-index"> 4 - The Z-index</a></li>
+                    <li><a href="#overflow"> 5 - Overflow</a></li>
+                    <li><a href="#float-clear"> 6 - Float and clear</a></li>
+                    <li><a href="#horz-verti"> 7 - Horizontal & Vertical Align</a></li>
+                  </ul>
+                </div>
+                <div class="others">
+                  <h2>Other Properties</h2>
+        
+                  <ul>
+                    <li><a href="#combinators"> 1 - Combinators </a></li>
+                    <li><a href="#pseudo"> 2 - Pseudo</a></li>
+                    <li><a href="#navbar"> 3 - Navigation Bar</a></li>
+                    <li><a href="#dropdowns"> 4 - Dropdowns </a></li>
+                    <li><a href="#"> 5 - Image Sprites</a></li>
+                    <li><a href="#attribute"> 6 - Attribute Selector</a></li>
+                    <li><a href="#form"> 7 - Form</a></li>
+                  </ul>
+                </div>
+            </section>
+
+         <!-- Topic section ends here ====================-->
+
+        
+         <!-- Display property starts here ====================-->
+            <section id="display">
+                <h2 class="section-title">The Display Property</h2>
+                <div class="properties">
+                    <h3>display: none:</h2>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiamsemper
+                        diam at erat pulvinar, at pulvinar felis blandit.
+                        <p class="ex1">This is a paragraph tag</p>
+                        Vestibulum volutpat tellus diam, consequat gravida liberorhoncus ut.
+                    </div>
+                
+                    <h3>display: inline:</h2>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiamsemper
+                        diam at erat pulvinar, at pulvinar felis blandit.
+                        <p class="ex2">This is a paragraph tag</p>
+                        Vestibulum volutpat tellus diam, consequat gravida liberorhoncus ut.
+                    </div>
+                
+                    <h3>display: block:</h2>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiamsemper
+                        diam at erat pulvinar, at pulvinar felis blandit.
+                        <p class="ex3">This is a paragraph tag</p>
+                        Vestibulum volutpat tellus diam, consequat gravida liberorhoncus ut.
+                    </div>
+                
+                    <h3>display: inline-block:</h2>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiamsemper
+                        diam at erat pulvinar, at pulvinar felis blandit.
+                        <p class="ex4">This is a paragraph tag</p>
+                        Vestibulum volutpat tellus diam, consequat gravida liberorhoncus ut.
+                    </div>
+                </div>
+            </section>
+
+         <!-- Display property ends here ====================-->
+
+         <!-- Width and max-width starts here ====================-->
+            <section id="widht-maxw">
+                <h2 class="section-title">Width and Max-Width</h2>
+                <div class="ex1">This div element has width: 768px;</div>
+                <br>
+
+                <div class="ex2">This div element has max-width: 768px;</div>
+
+                <p class="tips"><strong>See the Result:</strong> Drag the browser window to smaller than 768px wide, to see the difference between 
+                the two divs!</p>
+            </section>
+        
+         <!-- Width and max-width starts here ====================-->
+
+         <!-- position property starts here  ====================-->
+            <section id="position">
+                <h2 class="section-title">The Position Property</h2>
+
+                <h2>position: static;</h2>
+                <p>The Parent1 element has position: static, and will remain in the natural flow of the page.
+                It will NOT act as anchor point for the absolutely positioned Child1 element:</p>
+                <div id="parent1">Parent1: position: static.
+                <div id="child1">Child1: position: absolute, right: 15px, top: 70px</div>
+                </div>
+
+                <h2>position: relative;</h2>
+                <p>The Parent2 element has position: relative, and will remain in the natural flow of the page.
+                It will also act as anchor point for the absolutely positioned Child2 element:</p>
+                <div id="parent2">Parent2: position: relative.
+                <div id="child2">Child2: position: absolute, right: 15px, top: 70px</div>
+                </div>
+
+                <h2>position: absolute;</h2>
+                <p>The Parent3 element has position: absolute, and will NOT remain in the natural flow of the page.
+                It will position itself according to the closest positioned ancestor.
+                It will also act as anchor point for the absolutely positioned Child3 element:</p>
+                <div id="parent3">Parent3: position: absolute, top: 750px, right: 15px.
+                <div id="child3">Child3: position: absolute, right: 15px, top: 70px</div>
+                </div>
+
+                <h2>position: fixed;</h2>
+                <p>The Parent4 element has position: fixed, and will NOT remain in the natural flow of the page.
+                It will position itself according to the viewport.
+                It will also act as anchor point for the absolutely positioned Child4 element:</p> <br>
+                <strong>Like the header</strong>
+                
+                
+            </section>
+         <!-- position property ends here  ====================-->
+
+         <!-- Z-Index starts here  ====================-->
+            <section id="z-index">
+                
+                <h2 class="section-title">
+                    The Z-Index
+                </h2>
+                <div class="one">1</div>
+                <div class="two">Z-index 1</div>
+                <img src="https://puzzleweb.ru/images/puzzleweb/z-index.png" width="200" height="200">
+
+
+                <p>If you set z-index (-1) of the Z-index 1 div, then it will be placed behind the 1 div.</p>
+
+
+            </section>
+         <!-- Z-Index ends here  ====================-->
+
+            <section id="overflow">
+                <h2 class="section-title">Overflow</h2>
+
+                <div class="overflow-properties">
+                    <div class="visible">
+                        <h2>Overflow: visible</h2>
+        
+                        
+                        <div>You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+                    </div>
+        
+                    <div class="hidden">
+                        <h2>Overflow: hidden</h2>
+        
+                        
+        
+                        <div>You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+                    </div>
+        
+                    <div class="scroll">
+                        <h2>Overflow: scroll</h2>
+        
+                        
+        
+                        <div>You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+                    </div>
+        
+                    <div class="auto">
+                        <h2>Overflow: auto</h2>
+        
+                        
+        
+                        <div>You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+                    </div>
+        
+                    <div class="overflow-x-y">
+                        <h2>Overflow: X and Y</h2>
+        
+                        
+        
+                        <div>You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+                    </div>
+                </div>
+                
+            </section>
+
+            <!-- Overflow ends here  ====================-->
+
+            <!-- Float Clear starts here  ====================-->
+
+
+            <section id="float-clear">
+                <h2 class="section-title">
+                    Float and Clear
+                </h2>
+
+                <h3>Without Clearfix</h3>
+
+                <p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside of its container:</p>
+
+                <div>
+                <img class="img1" src="https://live.staticflickr.com/1930/31122456668_165e8e07d8.jpg" alt="Pineapple" width="170" >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+                </div>
+
+                <h3 style="clear:right">With New Modern Clearfix</h3>
+                <p>Add the clearfix hack to the containing element, to fix this problem:</p>
+
+                <div class="clearfix">
+                <img class="img2" src="https://live.staticflickr.com/1930/31122456668_165e8e07d8.jpg" alt="Pineapple" width="170" >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+                </div>
+            </section>
+            <!-- Float Clear ends here  ====================-->
+
+            <!-- Horizontal and vertical Align starts here ====================-->
+
+            <section id="horz-verti">
+                <h2 class="section-title">Horizontal & Vertical Align</h2>
+
+                <h3>Center with position and transform</h3>
+
+                <p>In this example, we use positioning and the transform property to vertically and horizontally center the div element:</p>
+
+                <div class="center">
+                <p>I am vertically and horizontally centered.</p>
+                </div>
+            </section>
+            <!-- Horizontal and vertical Align ends here ====================-->
+
+
+            <!-- Combinators starts here ====================-->
+
+            <section id="combinators">
+                <h2 class="section-title">Combinators</h2>
+
+                <div class="combinator-container">
+                    <div class="descendant">
+                        <h3>Descendant Selector</h3>
+    
+                        <p>The descendant selector matches all elements that are descendants of a specified element.</p>
+        
+                        <div>
+                            <p>Paragraph 1 in the div.</p>
+                            <p>Paragraph 2 in the div.</p>
+                            <section><p>Paragraph 3 in the div.</p></section>
+                        </div>
+        
+                        <p>Paragraph 4. Not in a div.</p>
+                        <p>Paragraph 5. Not in a div.</p>
+                    </div>
+    
+                    <div class="child">
+                        <h3>Child Selector</h3>
+    
+                        <p>The child selector (>) selects all elements that are the children of a specified element.</p>
+    
+                        <div>
+                            <p>Paragraph 1 in the div.</p>
+                            <p>Paragraph 2 in the div.</p>
+                            <section>
+                            <!-- not Child but Descendant -->
+                            <p>Paragraph 3 in the div (inside a section element).</p>
+                            </section>
+                            <p>Paragraph 4 in the div.</p>
+                        </div>
+    
+                        <p>Paragraph 5. Not in a div.</p>
+                        <p>Paragraph 6. Not in a div.</p>   
+                    </div>
+    
+                    <div class="sibling">
+                        <h3>Adjacent Sibling Selector</h3>
+    
+                        <p>The + selector is used to select an element that is directly after another specific element.</p>
+                        <p>The following example selects the first p element that are placed immediately after div elements:</p> <br>
+    
+                        <div>
+                            <p>Paragraph 1 in the div.</p>
+                            <p>Paragraph 2 in the div.</p>
+                        </div>
+    
+                        <p>Paragraph 3. After a div.</p>
+                        <p>Paragraph 4. After a div.</p>
+    
+                        <div>
+                            <p>Paragraph 5 in the div.</p>
+                            <p>Paragraph 6 in the div.</p>
+                        </div>
+    
+                        <p>Paragraph 7. After a div.</p>
+                        <p>Paragraph 8. After a div.</p>
+                    </div>
+    
+                    <div class="general">
+                        <h3>General Sibling Selector</h3>
+    
+                        <p>The general sibling selector (~) selects all elements that are next siblings of a specified element.</p> <br>
+    
+                        <p>Paragraph 1.</p>
+    
+                        <div>
+                            <p>Paragraph 2.</p>
+                        </div>
+    
+                        <p>Paragraph 3.</p>
+                        <code>Some code.</code>
+                        <p>Paragraph 4.</p>
+                    </div>
+                </div>
+
+                
+            </section>
+
+            <!-- Combinators ends here ====================-->
+
+            <!-- Pseudo starts here ====================-->
+
+            <section id="pseudo">
+                <h2 class="section-title">
+                    Pseudo Classes
+                </h2>
+
+                <h2>Styling a link depending on state</h2>
+
+                <p><b><a href="https://class.codingzonebd.com/css-properties/css-pseudo" target="_blank">This is a link</a></b></p>
+                <p> <br> <b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+                <p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+            </section>
+
+            <!-- Pseudo ends here ====================-->
+
+            <!-- Navigation starts here ====================-->
+
+            <section id="navbar">
+                <h2 class="section-title">Navigation Bar</h2>
+                <div class="navbar-container">
+                    <div class="vertical-nav">
+                        <h3>Vertical Navigation</h3>
+
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#news">News</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#about">About</a></li>
+                          </ul>
+                          <br>
+                          <p>Note: We use href="#" for test links. In a real web site this would be URLs.</p>
+                    </div>
+    
+                    <div class="vr-line"></div>
+    
+                    <div class="horizon-nav">
+                        <h3>Horizontal Navigation</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#news">News</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#about">About</a></li>
+                          </ul>
+                          <br>
+                          <p>Note: We use href="#" for test links. In a real web site this would be URLs.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Navigation ends here ====================-->
+
+            <!-- Dropdown starts here ====================-->
+
+            <section id="dropdowns">
+                <h2 class="section-title">
+                    Dropdowns
+                </h2>
+                <h2>Hoverable Dropdown</h2>
+                <p>Move the mouse over the text below to open the dropdown content.</p>
+                <br>
+
+                <div class="dropdown">
+                    <span>Departments ▾</span>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li>CSE</li>
+                            <li>EEE</li>
+                            <li>CIVIL</li>
+                            <li>SWE</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dropdown ends here ====================-->
+
+            <!-- Attributes starts here ====================-->
+
+
+            <section id="attribute">
+                <h2 class="section-title">
+                    Attribute Selector
+                </h2>
+
+                <div class="attribute-container">
+                    <div class="one">
+                        <h2>CSS [attribute] Selector</h2>
+                        <p>The links with a target attribute gets a yellow background:</p>
+
+                        <a href="https://www.google.com">Google.com</a>
+                        <a href="http://www.disney.com" target="_blank">disney.com</a>
+                        <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+                    </div>
+                    <div class="two">
+                        <h2>CSS [attribute="value"] Selector</h2>
+                        <p>The link with target="_blank" gets a yellow background:</p>
+
+                        <a href="https://www.google.com">Google.com</a>
+                        <a href="http://www.disney.com" target="_blank">disney.com</a>
+                        <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+                    </div>
+
+                    <div class="three">
+                        <h2>CSS [attribute|="value"] Selector</h2>
+
+                        <h1 class="top-header">Welcome</h1>
+                        <p class="top-text">Hello world!</p>
+                        <p class="topcontent">Are you learning CSS?</p>
+                    </div>
+
+                    <div class="four">
+                        <h2>CSS [attribute^="value"] Selector</h2>
+                        <h1 class="top-header">Welcome</h1>
+                        <p class="top-text">Hello world!</p>
+                        <p class="topcontent">Are you learning CSS?</p>
+                    </div>
+
+                    <div class="five">
+                        <h2>CSS [attribute$="value"] Selector</h2>
+
+                        <div class="first_test">The first div element.</div>
+                        <div class="second">The second div element.</div>
+                        <div class="my-test">The third div element.</div>
+                        <p class="mytest">This is some text in a paragraph.</p>
+                    </div>
+
+                    <div class="six">
+                        <h2>CSS [attribute*="value"] Selector</h2>
+
+                        <div class="first_test">The first div element.</div>
+                        <div class="second">The second div element.</div>
+                        <div class="my-test">The third div element.</div>
+                        <p class="mytest">This is some text in a paragraph.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Attributes ends here ====================-->
+
+            <!-- Form starts here ====================-->
+
+            <section id="form">
+                <h2 class="section-title">Form</h2>
+                <h3>Using CSS to style an HTML Form</h3>
+
+                <div>
+                <form action="#">
+                    <label for="fname">First Name : </label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name : </label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+
+                    <label for="lname">Gender :  </label>
+                    <span>Male </span><input type="radio" id="male" name="lastname"> 
+                    <span>Female </span><input type="radio" id="female" name="lastname">
+                
+                    <input type="submit" value="Submit">
+                </form>
+                </div>
+            </section>
+
+            <!-- Form ends here ====================-->
+
+        </main>
+
+        <footer>
+            <p>Copyright &copy; Rakib-2022 </p> 
+            <a href="#topic-sect"><span>⏃</span></a>
+        </footer>
+      
+
+    </div>
+  </body>
+</html>

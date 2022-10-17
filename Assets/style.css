@@ -1,0 +1,721 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* background-color: rgb(255, 229, 229); */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section-title {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  /* background-color: rgb(84, 36, 255); */
+  border-top: 1px solid rgb(84, 36, 255);
+  border-bottom: 1px solid rgb(84, 36, 255);
+  color: rgb(84, 36, 255);
+  /* border-radius: 5px; */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  background-color: rgb(229, 245, 255);
+}
+main {
+  margin: 0 3rem;
+}
+.header {
+  width: 100%;
+  display: block;
+  position: fixed;
+  padding: 1rem;
+  background-color: rgba(55, 0, 255, 0.891);
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.465);
+  /* margin-bottom: 2rem; */
+}
+
+h2 {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  color: tomato;
+}
+#topic-sect {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  column-gap: 4rem;
+  padding: 2rem 0;
+}
+
+#topic-sect ul {
+  list-style-type: none;
+}
+
+#topic-sect ul li {
+  width: 300px;
+  margin-left: 1rem;
+  /* background-color: rgb(255, 224, 224); */
+  background-color: rgb(108, 67, 255);
+
+  border-radius: 0px 30px 30px 0px;
+  margin: 0.7rem 0;
+  padding: 0.4rem;
+  transition: 0.2s;
+}
+
+#topic-sect ul li a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgb(229, 245, 255);
+}
+
+#topic-sect ul li:hover {
+  list-style-type: decimal;
+  background-color: rgb(84, 36, 255);
+
+  color: rgb(99, 56, 255);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.086);
+  transform: scale(1.1) translate(20px);
+}
+
+/* Display properties starts here ============================= */
+
+#display {
+  padding-bottom: 3rem;
+}
+
+#display p {
+  color: tomato;
+}
+
+#display h3 {
+  color: rgb(99, 56, 255);
+  padding: 1rem 0;
+}
+
+#display p.ex1 {
+  display: none;
+}
+#display p.ex2 {
+  display: inline;
+}
+#display p.ex3 {
+  display: block;
+}
+#display p.ex4 {
+  display: inline-block;
+}
+
+/* Display properties ends here ============================= */
+
+/* Width and max width starts here ============================= */
+#widht-maxw {
+  padding-bottom: 2rem;
+}
+#widht-maxw div.ex1 {
+  width: 768px;
+  margin: auto;
+  border: 3px solid rgb(99, 56, 255);
+  padding: 0.5rem;
+}
+
+#widht-maxw div.ex2 {
+  max-width: 768px;
+  margin: auto;
+  border: 3px solid tomato;
+  padding: 0.5rem;
+}
+.tips {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+/* Width and max width ends here ============================= */
+
+/* Position property starts here ============================= */
+#position {
+  height: 130vh;
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+#position h2 {
+  margin: 1rem 0;
+}
+#parent1 {
+  position: static;
+  border: 1px solid rgb(84, 36, 255);
+  width: 300px;
+  height: 100px;
+}
+
+#child1 {
+  position: absolute;
+  border: 1px solid tomato;
+  top: 70px;
+  right: 15px;
+}
+
+#parent2 {
+  position: relative;
+  border: 1px solid rgb(84, 36, 255);
+  width: 300px;
+  height: 100px;
+}
+
+#child2 {
+  position: absolute;
+  border: 1px solid tomato;
+  top: 70px;
+  right: 15px;
+}
+
+#parent3 {
+  position: absolute;
+  border: 1px solid rgb(84, 36, 255);
+  width: 300px;
+  height: 100px;
+  top: 750px;
+  right: 15px;
+}
+
+#child3 {
+  position: absolute;
+  border: 1px solid tomato;
+  top: 70px;
+  right: 15px;
+}
+
+/* #parent4 {
+  position: fixed;
+  border: 1px solid rgb(84, 36, 255);
+  background-color: rgba(83, 36, 255, 0.016);
+
+  width: 300px;
+  height: 100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+} */
+
+#child4 {
+  position: absolute;
+  border: 1px solid tomato;
+  top: 70px;
+  right: 15px;
+}
+/* Position property ends here ============================= */
+
+/* Z-Index starts here ============================= */
+#z-index {
+  position: relative;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+#z-index div {
+  width: 95%;
+  height: 100px;
+  background-color: #fff;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: left;
+}
+#z-index img {
+  margin: 1.5rem 0;
+}
+#z-index .one {
+  background-color: rgb(255, 99, 71);
+}
+
+#z-index .two {
+  position: absolute;
+  background-color: rgba(83, 36, 255, 0.604);
+  z-index: 1;
+  top: 110px;
+  left: 30px;
+}
+/* z-index ends here =============================*/
+
+/* Overflow starts here============================= */
+
+#overflow {
+  height: auto;
+  padding-bottom: 6rem;
+}
+
+#overflow .overflow-properties {
+  display: flex;
+  column-gap: 0.5rem;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* #overflow .overflow-properties > div {
+  width: 50%;
+} */
+
+#overflow p {
+  padding: 1rem 0;
+}
+#overflow .visible div {
+  background-color: rgba(255, 127, 80, 0.703);
+  width: 200px;
+  height: 100px;
+  border: 1px solid;
+  overflow: visible;
+}
+
+#overflow .hidden div {
+  background-color: rgba(255, 127, 80, 0.773);
+  width: 200px;
+  height: 100px;
+  border: 1px solid;
+  overflow: hidden;
+}
+
+#overflow .scroll div {
+  background-color: rgba(255, 127, 80, 0.767);
+  width: 200px;
+  height: 100px;
+  border: 1px solid;
+  overflow: scroll;
+}
+
+#overflow .auto div {
+  background-color: rgba(255, 127, 80, 0.781);
+  width: 200px;
+  height: 100px;
+  border: 1px solid;
+  overflow: auto;
+}
+
+#overflow .overflow-x-y div {
+  background-color: rgba(255, 127, 80, 0.727);
+  width: 200px;
+  height: 100px;
+  border: 1px solid;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+/* Overflow ends here============================= */
+
+/* Float-clear starts here ============================= */
+#float-clear {
+  padding-bottom: 3rem;
+}
+
+#float-clear p {
+  line-height: 3rem;
+}
+
+#float-clear h3 {
+  color: rgb(83, 36, 255);
+}
+#float-clear div {
+  border: 3px solid tomato;
+  padding: 1rem;
+}
+
+.img1 {
+  float: right;
+}
+
+.img2 {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Float-clear ends here ============================= */
+
+/* Horizontal and vertical align starts here ============================= */
+#horz-verti {
+  padding-bottom: 3rem;
+}
+
+#horz-verti h3 {
+  color: rgb(83, 36, 255);
+}
+#horz-verti p {
+  line-height: 3rem;
+}
+#horz-verti .center {
+  height: 200px;
+  position: relative;
+  border: 3px solid green;
+}
+
+#horz-verti .center p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* Horizontal and vertical align ends here ============================= */
+
+/* Combinators Starts here ============================= */
+#combinators {
+  padding-bottom: 3rem;
+}
+
+#combinators .combinator-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+#combinators h3 {
+  color: rgb(83, 36, 255);
+  margin-bottom: 1rem;
+}
+
+#combinators .descendant div p {
+  margin: 1rem 0;
+  line-height: 2rem;
+  background-color: tomato;
+}
+#combinators .child div > p {
+  margin: 1rem 0;
+  line-height: 2rem;
+  background-color: tomato;
+}
+
+#combinators .sibling div + p {
+  margin: 1rem 0;
+  line-height: 2rem;
+  background-color: tomato;
+}
+
+#combinators .general div ~ p {
+  margin: 1rem 0;
+  line-height: 2rem;
+  background-color: tomato;
+}
+
+/* Combinators ends here ============================= */
+
+/* Pseudo class starts here ============================= */
+
+#pseudo {
+  padding-bottom: 3rem;
+}
+#pseudo a:link {
+  color: tomato;
+}
+
+/* visited link */
+#pseudo a:visited {
+  color: green;
+}
+
+/* mouse over link */
+#pseudo a:hover {
+  color: black;
+}
+
+/* selected link */
+#pseudo a:active {
+  color: blue;
+}
+
+/* Pseudo class ends here ============================= */
+
+/* Navbar starts here ============================= */
+#navbar {
+  padding-bottom: 3rem;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  column-gap: 2rem;
+}
+.vr-line {
+  height: auto;
+  width: 3px;
+  background-color: black;
+}
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#navbar .vertical-nav h3 {
+  margin-bottom: 1rem;
+  color: tomato;
+}
+
+#navbar .vertical-nav li a {
+  display: block;
+  width: 20%;
+  color: #fff;
+  padding: 0.5rem 0.3rem;
+  background-color: rgb(83, 36, 255);
+  border-radius: 5px;
+  text-align: center;
+  margin: 0.5rem 0;
+  text-decoration: none;
+  transition: 0.3s;
+}
+#navbar .vertical-nav li a:hover {
+  background-color: tomato;
+}
+
+#navbar .horizon-nav h3 {
+  margin-bottom: 1rem;
+  color: tomato;
+}
+.horizon-nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  /* column-gap: 0.5rem; */
+}
+
+.horizon-nav ul li {
+  padding: 0.5rem 0.5rem;
+  width: 100%;
+  background-color: rgb(83, 36, 255);
+  /* border-radius: 5px; */
+  transition: 0.3s;
+}
+
+.horizon-nav ul li:hover {
+  background-color: tomato;
+}
+.horizon-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 0.5rem;
+}
+
+/* Navbar ends here ============================= */
+
+/* Dropdown starts here ============================= */
+
+#dropdowns {
+  height: 40vh;
+  padding-bottom: 3rem;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown span {
+  background-color: rgb(83, 36, 255);
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  color: rgba(83, 36, 255, 0.633);
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.108);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown-content ul {
+  list-style-type: none;
+}
+
+.dropdown-content ul li {
+  padding: 0.5rem 0.2rem;
+  font-weight: 600;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dropdown ends here ============================= */
+
+#img-sprites {
+  height: 50vh;
+}
+
+/* Attribute starts here ============================= */
+
+#attribute {
+  padding-bottom: 3rem;
+}
+
+.attribute-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+#attribute .attribute-container .one a[target] {
+  background-color: tomato;
+  color: #fff;
+}
+
+#attribute .attribute-container .two a[target="_blank"] {
+  background-color: tomato;
+  color: #fff;
+}
+
+#attribute .attribute-container .three [class|="top"] {
+  background: tomato;
+  color: #fff;
+}
+
+#attribute .attribute-container .four [class^="top"] {
+  background: tomato;
+  color: #fff;
+}
+
+#attribute .attribute-container .five [class$="test"] {
+  background: tomato;
+  color: #fff;
+}
+#attribute .attribute-container .six [class*="te"] {
+  background: tomato;
+  color: #fff;
+}
+
+/* Attribute ends here  =============================*/
+
+/* form starts here  =============================*/
+#form {
+  padding-bottom: 3rem;
+}
+
+#form h3 {
+  color: tomato;
+}
+
+#form input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#form input[type="radio"] {
+  margin: 1rem 0;
+}
+
+#form input[type="submit"] {
+  width: 100%;
+  background-color: rgb(83, 36, 255);
+
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#form input[type="submit"]:hover {
+  background-color: tomato;
+}
+
+#form div {
+  border-radius: 5px;
+
+  padding: 20px;
+}
+/* form ends here  =============================*/
+
+/* Footer Starts here  */
+footer {
+  height: 10vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer p {
+  margin-left: 4rem;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a {
+  text-align: center;
+  color: white;
+  width: 30px;
+  height: 30px;
+  margin-right: 4rem;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+footer a:hover {
+  background-color: tomato;
+}
+
+/* Footer ends here  */
+
+/* Resposive starts here======================= */
+@media only screen and (max-width: 600px) {
+  #topic-sect {
+    flex-direction: column;
+  }
+
+  #topic-sect .layouts {
+    width: 100%;
+  }
+  #topic-sect .others {
+    width: 100%;
+  }
+
+  #topic-sect ul li {
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+    padding: 1rem 0;
+  }
+
+  #topic-sect ul li:hover {
+    transform: scale(1.1);
+  }
+
+  #combinators .combinator-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  .attribute-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* Resposive ends here======================= */
